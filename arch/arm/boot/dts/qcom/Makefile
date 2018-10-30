@@ -127,18 +127,8 @@ dtbo-$(CONFIG_ARCH_MSM8998) += \
 	msm8998-qrd-overlay.dtbo \
 	msm8998-qrd-vr1-overlay.dtbo \
 	msm8998-qrd-skuk-overlay.dtbo
+endif
 
-msm8998-cdp-overlay.dtbo-base :=  msm8998.dtb
-msm8998-mtp-overlay.dtbo-base :=  msm8998.dtb
-msm8998-v2-cdp-overlay.dtbo-base :=  msm8998-v2.dtb
-msm8998-v2-mtp-overlay.dtbo-base :=  msm8998-v2.dtb
-msm8998-v2.1-cdp-overlay.dtbo-base :=  msm8998-v2.1.dtb
-msm8998-v2.1-mtp-overlay.dtbo-base :=  msm8998-v2.1.dtb
-msm8998-qrd-overlay.dtbo-base :=  msm8998-qrd.dtb
-msm8998-qrd-vr1-overlay.dtbo-base :=  msm8998-qrd-vr1.dtb
-msm8998-qrd-skuk-overlay.dtbo-base :=  msm8998-qrd-skuk.dtb
-else
-ifeq ($(CONFIG_CUSTOM_ROM),y)
 dtb-$(CONFIG_ARCH_MSM8998) += cheeseburger-v2.1-dvt1-custom.dtb
 dtb-$(CONFIG_ARCH_MSM8998) += cheeseburger-v2.1-pvt-custom.dtb
 dtb-$(CONFIG_ARCH_MSM8998) += cheeseburger-v2.1-pvt1-custom.dtb
@@ -146,17 +136,6 @@ dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-dvt-custom.dtb
 dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-pvt-custom.dtb
 dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-Second_Resource-custom.dtb
 dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-backup-custom.dtb
-else
-dtb-$(CONFIG_ARCH_MSM8998) += cheeseburger-v2.1-dvt1.dtb
-dtb-$(CONFIG_ARCH_MSM8998) += cheeseburger-v2.1-pvt.dtb
-dtb-$(CONFIG_ARCH_MSM8998) += cheeseburger-v2.1-pvt1.dtb
-dtb-$(CONFIG_ARCH_MSM8998) += cheeseburger-v2.1-backup.dtb
-dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-dvt.dtb
-dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-pvt.dtb
-dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-Second_Resource.dtb
-dtb-$(CONFIG_ARCH_MSM8998) += dumpling-v2.1-backup.dtb
-endif
-endif
 
 dtb-$(CONFIG_ARCH_MSMHAMSTER) += msmhamster-rumi.dtb
 
